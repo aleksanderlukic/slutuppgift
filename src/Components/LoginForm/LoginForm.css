@@ -1,0 +1,9 @@
+.wrapper {
+  width: 420px;
+  background: slateblue;
+  color: white;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+}
