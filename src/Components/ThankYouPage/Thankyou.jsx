@@ -1,4 +1,4 @@
-import "./ThankYou.css";
+import "./Thankyou.css";
 
 export default function ThankYou() {
   return (

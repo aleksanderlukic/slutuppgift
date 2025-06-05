@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Favorites.css";
+import "./Favorite.css";
 
 export default function Favorites() {
   const [products, setProducts] = useState([]);

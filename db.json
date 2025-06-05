@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Spicy Buffalo Wings",
+      "category": "starter",
+      "price": 50,
+      "image": "buffalo-wings.png",
+      "description": "Crispy wings with a spicy glaze, perfect for a fiery start."
+    },
+    {
+      "id": 2,
+      "name": "Mediterranean Wrap",
+      "category": "main",
+      "price": 85,
+      "image": "mediterranean-wrap.png",
+      "description": "A soft wrap filled with grilled veggies, hummus, and chicken."
+    },
+    {
+      "id": 3,
+      "name": "Triple Chocolate Cake",
+      "category": "dessert",
+      "price": 60,
+      "image": "triple-chocolate-cake.png",
+      "description": "A decadent treat with layers of rich chocolate goodness."
+    },
+    {
+      "id": 4,
+      "name": "Fresh Lemonade",
+      "category": "drink",
+      "price": 30,
+      "image": "fresh-lemonade.png",
+      "description": "A refreshing blend of citrus and sweetness."
+    },
+    {
+      "id": 5,
+      "name": "BBQ Pulled Pork Sandwich",
+      "category": "main",
+      "price": 90,
+      "image": "bbq-pulled-pork.png",
+      "description": "Tender pulled pork, smoky BBQ sauce, and pickles on a toasted bun."
+    }
+  ],
+  "orders": [
+    {
+      "id": "1001",
+      "uuid": "abcd-1234-efgh-5678",
+      "userId": 1,
+      "fullName": "Alex Example",
+      "streetAddress": "123 Code St",
+      "apartment": "4A",
+      "city": "Codetown",
+      "postalCode": "12345",
+      "phone": "0700000000",
+      "deliveryNote": "Leave at the door.",
+      "items": [
+        {
+          "id": 1,
+          "name": "Spicy Buffalo Wings",
+          "category": "starter",
+          "price": 50,
+          "image": "buffalo-wings.png",
+          "description": "Crispy wings with a spicy glaze, perfect for a fiery start.",
+          "quantity": 2
+        },
+        {
+          "id": 3,
+          "name": "Triple Chocolate Cake",
+          "category": "dessert",
+          "price": 60,
+          "image": "triple-chocolate-cake.png",
+          "description": "A decadent treat with layers of rich chocolate goodness.",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 160,
+      "createdAt": "2025-06-05T10:15:00.000Z",
+      "paymentMethod": "card",
+      "paymentDetails": {
+        "cardNumber": "**** **** **** 1234"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "phone": "0700000000",
+      "password": "password123",
+      "fullName": "Alex Example",
+      "streetAddress": "123 Code St",
+      "apartment": "4A",
+      "city": "Codetown",
+      "postalCode": "12345"
+    }
+  ]
+}
