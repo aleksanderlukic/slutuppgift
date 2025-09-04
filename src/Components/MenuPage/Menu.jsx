@@ -52,6 +52,11 @@ export default function Menu() {
         {products.map((p) => (
           <div key={p.id} className="menu-card">
             <h3>{p.name}</h3>
+            <img
+              src={`/images/${p.image}`}
+              alt={p.name}
+              className="menu-image"
+            />
             <p>{p.price} kr</p>
             <button
               onClick={() => toggleFavorite(p.id)}

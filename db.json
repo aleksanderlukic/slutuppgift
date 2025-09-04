@@ -5,7 +5,7 @@
       "name": "Spicy Buffalo Wings",
       "category": "starter",
       "price": 50,
-      "image": "buffalo-wings.png",
+      "image": "crispy-chicken.png",
       "description": "Crispy wings with a spicy glaze, perfect for a fiery start."
     },
     {
@@ -13,7 +13,7 @@
       "name": "Mediterranean Wrap",
       "category": "main",
       "price": 85,
-      "image": "mediterranean-wrap.png",
+      "image": "vietnamese.png",
       "description": "A soft wrap filled with grilled veggies, hummus, and chicken."
     },
     {
@@ -21,7 +21,7 @@
       "name": "Triple Chocolate Cake",
       "category": "dessert",
       "price": 60,
-      "image": "triple-chocolate-cake.png",
+      "image": "ice-cream-deluxe.png",
       "description": "A decadent treat with layers of rich chocolate goodness."
     },
     {
@@ -29,7 +29,7 @@
       "name": "Fresh Lemonade",
       "category": "drink",
       "price": 30,
-      "image": "fresh-lemonade.png",
+      "image": "juice.png",
       "description": "A refreshing blend of citrus and sweetness."
     },
     {
@@ -37,7 +37,7 @@
       "name": "BBQ Pulled Pork Sandwich",
       "category": "main",
       "price": 90,
-      "image": "bbq-pulled-pork.png",
+      "image": "tasty-chicken-bites.png",
       "description": "Tender pulled pork, smoky BBQ sauce, and pickles on a toasted bun."
     }
   ],
