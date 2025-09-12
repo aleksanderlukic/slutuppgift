@@ -1,10 +1,9 @@
 // File: src/Components/MenuPage/Menu.jsx
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Menu.css";
 
 export default function Menu() {
-  const [products, setProducts] = useState([]);
   const [favorites, setFavorites] = useState(
     () => JSON.parse(localStorage.getItem("favorites")) || []
   );
@@ -14,11 +13,13 @@ export default function Menu() {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetch("http://localhost:5000/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+  // 🔹 Statiska produkter istället för fetch
+  const products = [
+    { id: 1, name: "Chicken Wings", price: 89, image: "chicken-wings.png" },
+    { id: 2, name: "Freshed Coffee", price: 39, image: "coffee.png" },
+    { id: 3, name: "Classic Burger", price: 129, image: "burger.png" },
+    { id: 4, name: "Asian Rice Crisp", price: 59, image: "asian-crisps.png" },
+  ];
 
   const toggleFavorite = (id) => {
     const updated = favorites.includes(id)

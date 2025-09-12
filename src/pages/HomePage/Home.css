@@ -47,3 +47,25 @@
   flex-wrap: wrap;
   gap: 50px;
 }
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 20px 0;
+}
+
+.home-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ff9800;
+  color: white;
+  transition: background 0.3s;
+}
+
+.home-buttons button:hover {
+  background-color: #e68900;
+}

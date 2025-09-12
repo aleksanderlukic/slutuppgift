@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
 import Card from "../../Components/Card";
 import Footer from "../../Components/Footer";
@@ -11,6 +12,16 @@ export default function Home() {
 
       <h1 className="hero-title">Drone Delights</h1>
       <p className="hero-subtitle">Hett, gott och levererat blixtsnabbt.</p>
+
+      {/* Navigationsknappar */}
+      <div className="home-buttons">
+        <Link to="/menu">
+          <button className="menu-btn">Visa Meny</button>
+        </Link>
+        <Link to="/om-oss">
+          <button className="omoss-btn">Om oss</button>
+        </Link>
+      </div>
 
       <h2 className="popular-title">Populäraste Rätterna</h2>
 
@@ -38,9 +49,6 @@ export default function Home() {
       </div>
 
       <Footer />
-
     </div>
-
-    
   );
 }
