@@ -1,22 +1,131 @@
-.cart {
-  padding: 20px;
+.cart-container {
+  position: relative;
+  width: 1728px;
+  height: 1117px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgba(64,0,255,0.68) 0%, rgba(101,50,255,0.68) 100%), #FFFFFF;
+  font-family: 'Inter', sans-serif;
 }
+
+.cart-title {
+  position: absolute;
+  left: 749px;
+  top: 172px;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFA82F;
+  border: 1px solid #FFA82F;
+  padding: 5px 10px;
+}
+
 .cart-item {
+  position: absolute;
+  left: 666px;
+  width: 428px;
+  height: 121px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.cart-item-img {
+  width: 129px;
+  height: 85px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.item-name {
+  font-size: 16px;
+  color: #000;
+}
+
+.item-price {
+  font-size: 16px;
+  color: #000;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.control-btn {
+  width: 30px;
+  height: 30px;
+  background: #FFA82F;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.item-quantity {
+  width: 20px;
+  text-align: center;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+.cart-footer {
+  position: absolute;
+  left: 666px;
+  top: 832px;
+  width: 428px;
+  height: 49px;
+  background: #FFA82F;
+  border: 1px solid #FFA82F;
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  align-items: center;
+  padding: 0 20px;
+  color: #FFFFFF;
+  font-size: 16px;
 }
-.total {
-  margin-top: 20px;
-  font-weight: bold;
-}
-.checkout-btn {
-  margin-top: 10px;
-  background: green;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
+
+.empty-cart-btn {
+  position: absolute;
+  left: 666px;
+  top: 701px;
+  width: 428px;
+  height: 49px;
+  background: #FFA82F;
+  border: 1px solid #FFA82F;
+  color: #FFFFFF;
   cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-btn {
+  position: absolute;
+  left: 669px;
+  top: 908px;
+  width: 423px;
+  height: 42px;
+  background: #FFA82F;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.empty-cart {
+  position: absolute;
+  top: 500px;
+  left: 750px;
+  font-size: 24px;
+  color: #000;
 }
