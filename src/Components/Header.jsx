@@ -1,21 +1,28 @@
+// File: src/Components/Header.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
-import logo from "../assets/logo.png";
 
 export default function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="Logo" className="logo" />
-      <nav className="nav">
-        <a href="/" className="nav-link">
-          Visa Meny
-        </a>
-        <a href="/about" className="nav-link">
-          Om oss
-        </a>
-        <a href="/cart" className="nav-link cart-link">
-          Varukorg
-        </a>
+      <h2 className="logo">Drone Delights</h2>
+      <nav>
+        <ul className="nav-links">
+          <li>
+            <Link to="/">Hem</Link>
+          </li>
+          <li>
+            <Link to="/menu">Meny</Link>
+          </li>
+          <li>
+            <Link to="/om-oss">Om oss</Link>
+          </li>{" "}
+          {/* Här går du till OmOssPage */}
+          <li>
+            <Link to="/cart">Kundvagn</Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
