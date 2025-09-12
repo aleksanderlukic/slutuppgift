@@ -1,0 +1,49 @@
+.home-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(64,0,255,0.68) 0%, rgba(101,50,255,0.68) 100%);
+  padding: 0 50px;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-title {
+  width: 1102px;
+  height: 109px;
+  margin: 50px auto 10px;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 109px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero-subtitle {
+  width: 344px;
+  height: 48px;
+  margin: 0 auto 50px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.popular-title {
+  width: 318px;
+  height: 39px;
+  margin: 0 auto 40px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}

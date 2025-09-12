@@ -1,0 +1,21 @@
+.custom-btn {
+  width: 154px;
+  height: 43px;
+  background: #E78E41;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.custom-btn:hover {
+  transform: scale(1.05);
+}
+
+.custom-btn.clicked {
+  background: #41E7A0; /* Grön när tillagd */
+  transform: scale(1.1);
+}

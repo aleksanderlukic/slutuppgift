@@ -1,0 +1,132 @@
+.om-oss-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(64,0,255,0.68) 0%, rgba(101,50,255,0.68) 100%);
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+  padding-top: 70px; /* plats för Navbar */
+}
+
+/* Bakgrundsbox */
+.background-box {
+  position: absolute;
+  width: 575.12px;
+  height: 741px;
+  left: 50%;
+  top: 223px;
+  transform: translateX(-50%);
+  background: #8F75FF;
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.25);
+  border-radius: 10px;
+}
+
+/* Rubriker och texter */
+.headline {
+  position: absolute;
+  width: 447px;
+  height: 36px;
+  left: 50%;
+  top: 316px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFA82F;
+}
+
+.sub-headline {
+  position: absolute;
+  width: 344px;
+  height: 48px;
+  left: 50%;
+  top: 286px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.drone-delights {
+  position: absolute;
+  width: 215px;
+  height: 36px;
+  left: 50%;
+  top: 250px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFA82F;
+}
+
+.text-1 {
+  position: absolute;
+  width: 290.6px;
+  height: 152px;
+  left: 50%;
+  top: 368px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.text-2 {
+  position: absolute;
+  width: 290.6px;
+  height: 133px;
+  left: 50%;
+  top: 578px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.delivery-system {
+  position: absolute;
+  width: 299px;
+  height: 36px;
+  left: 50%;
+  top: 727px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFA82F;
+}
+
+.text-3 {
+  position: absolute;
+  width: 290.6px;
+  height: 133px;
+  left: 50%;
+  top: 779px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.omos-highlight {
+  position: absolute;
+  width: 109px;
+  height: 36px;
+  left: 50%;
+  top: 531px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFA82F;
+}
