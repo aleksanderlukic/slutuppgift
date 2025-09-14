@@ -1,23 +1,23 @@
-// src/components/Navbar.jsx
+// src/components/Navbar/Navbar.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-export default function Navbar({ cartItems }) {
+const Navbar = ({ cartItems = [] }) => {
   return (
     <nav className="navbar">
-      <div className="navbar-left">
-        <h1 className="logo">Drone Delights</h1>
+      <div className="nav-left">
+        <Link to="/">Hem</Link>
+        <Link to="/menu">Meny</Link>
+        <Link to="/om-oss">Om oss</Link>
       </div>
-
-      <div className="navbar-center">
-        <a href="/">Hem</a>
-        <a href="/menu">Meny</a>
-        <a href="/about">Om oss</a>
-      </div>
-
-      <div className="navbar-right">
-        <button className="cart-btn">🛒 Varukorg ({cartItems.length})</button>
+      <div className="nav-right">
+        <Link to="/cart" className="cart-link">
+          🛒 {cartItems.length}
+        </Link>
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;

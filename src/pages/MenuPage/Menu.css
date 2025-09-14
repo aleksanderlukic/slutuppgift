@@ -1,45 +1,69 @@
-.menu {
+.menu-container {
   padding: 20px;
-}
-
-.menu-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.menu-card {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 10px;
-  width: 200px;
-  background: white;
   text-align: center;
 }
 
-.menu-image {
+.menu-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ffa82f;
+}
+
+.menu-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.menu-search {
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #8f75ff;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.menu-filter {
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #8f75ff;
+  border-radius: 8px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: #8f75ff;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-img {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin: 8px 0;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
-.heart {
-  font-size: 20px;
-  color: red;
-  background: none;
+.menu-btn {
+  margin-top: 10px;
+  background: #ffa82f;
   border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
+  color: black;
 }
 
-.add-to-cart {
-  margin-top: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
+.menu-btn:hover {
+  background: #ffbb55;
 }
-
-
-
-
-
-  

@@ -1,76 +1,96 @@
-// File: src/Components/MenuPage/Menu.jsx
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// MenuPage.jsx
+import React, { useState } from "react";
 import "./Menu.css";
 
-export default function Menu() {
-  const [favorites, setFavorites] = useState(
-    () => JSON.parse(localStorage.getItem("favorites")) || []
-  );
-  const [cart, setCart] = useState(
-    () => JSON.parse(localStorage.getItem("cart")) || []
-  );
+const sampleMenu = [
+  {
+    id: 1,
+    name: "Crispy chicken bites",
+    category: "Förrätter",
+    price: 39,
+    img: "/images/crispy-chicken.png",
+  },
+  {
+    id: 2,
+    name: "Thin Crust Pizza",
+    category: "Huvudrätter",
+    price: 95,
+    img: "/images/pizza.png",
+  },
+  {
+    id: 3,
+    name: "Roasted veggie medley",
+    category: "Huvudrätter",
+    price: 55,
+    img: "/images/vegetables-chroma.png",
+  },
+  {
+    id: 4,
+    name: "Coca Cola",
+    category: "Drycker",
+    price: 25,
+    img: "/images/coke.png",
+  },
+  {
+    id: 5,
+    name: "Chokladmousse",
+    category: "Desserter",
+    price: 45,
+    img: "/images/chocolate-mousse.png",
+  },
+];
 
-  const navigate = useNavigate();
+const MenuPage = ({ addToCart }) => {
+  const [selectedCategory, setSelectedCategory] = useState("Alla");
+  const [search, setSearch] = useState("");
 
-  // 🔹 Statiska produkter istället för fetch
-  const products = [
-    { id: 1, name: "Chicken Wings", price: 89, image: "chicken-wings.png" },
-    { id: 2, name: "Freshed Coffee", price: 39, image: "coffee.png" },
-    { id: 3, name: "Classic Burger", price: 129, image: "burger.png" },
-    { id: 4, name: "Asian Rice Crisp", price: 59, image: "asian-crisps.png" },
+  const categories = [
+    "Alla",
+    "Förrätter",
+    "Huvudrätter",
+    "Drycker",
+    "Desserter",
   ];
 
-  const toggleFavorite = (id) => {
-    const updated = favorites.includes(id)
-      ? favorites.filter((fav) => fav !== id)
-      : [...favorites, id];
-    setFavorites(updated);
-    localStorage.setItem("favorites", JSON.stringify(updated));
-  };
-
-  const addToCart = (product) => {
-    const updatedCart = [...cart, { ...product, quantity: 1 }];
-    setCart(updatedCart);
-    localStorage.setItem("cart", JSON.stringify(updatedCart));
-  };
-
-  const handleGoToCart = () => {
-    navigate("/cart");
-  };
+  const filteredMenu = sampleMenu.filter(
+    (item) =>
+      (selectedCategory === "Alla" || item.category === selectedCategory) &&
+      item.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
-    <div className="menu">
-      <h2>Meny</h2>
-      <button
-        onClick={handleGoToCart}
-        className="go-to-cart"
-        aria-label="Go to Cart"
-      >
-        Gå till kundvagn
-      </button>
+    <div className="menu-container">
+      <h1 className="menu-title">Meny</h1>
+
+      <div className="menu-controls">
+        <input
+          type="text"
+          placeholder="Sök maträtt..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="menu-search"
+        />
+
+        <select
+          className="menu-filter"
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+        >
+          {categories.map((c) => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <div className="menu-grid">
-        {products.map((p) => (
-          <div key={p.id} className="menu-card">
-            <h3>{p.name}</h3>
-            <img
-              src={`/images/${p.image}`}
-              alt={p.name}
-              className="menu-image"
-            />
-            <p>{p.price} kr</p>
-            <button
-              onClick={() => toggleFavorite(p.id)}
-              className="heart"
-              aria-label="Toggle Favorite"
-            >
-              {favorites.includes(p.id) ? "♥" : "♡"}
-            </button>
-            <button
-              onClick={() => addToCart(p)}
-              className="add-to-cart"
-              aria-label="Add to Cart"
-            >
+        {filteredMenu.map((item) => (
+          <div key={item.id} className="menu-item">
+            <img src={item.img} alt={item.name} className="menu-img" />
+            <h3>{item.name}</h3>
+            <p>{item.price} kr</p>
+            <button className="menu-btn" onClick={() => addToCart(item)}>
               Lägg till i kundvagn
             </button>
           </div>
@@ -78,4 +98,6 @@ export default function Menu() {
       </div>
     </div>
   );
-}
+};
+
+export default MenuPage;

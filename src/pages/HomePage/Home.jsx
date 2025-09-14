@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../../Components/Header";
 import Card from "../../Components/Card";
-import Footer from "../../Components/Footer";
 import "./Home.css";
 
 export default function Home() {
   return (
     <div className="home-page">
-      <Header />
 
       <h1 className="hero-title">Drone Delights</h1>
       <p className="hero-subtitle">Hett, gott och levererat blixtsnabbt.</p>
@@ -48,7 +45,7 @@ export default function Home() {
         />
       </div>
 
-      <Footer />
+      
     </div>
   );
 }

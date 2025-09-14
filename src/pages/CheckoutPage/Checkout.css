@@ -1,0 +1,116 @@
+/* src/pages/CheckoutPage/Checkout.css */
+
+.checkout-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.checkout-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.checkout-container h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.checkout-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.checkout-container ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-container p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.checkout-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.checkout-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.checkout-form input[type="radio"] {
+  margin-right: 10px;
+}
+
+.checkout-form button {
+  padding: 14px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.checkout-form button:hover {
+  background-color: #45a049;
+}
+
+/* Responsivitet */
+@media (max-width: 600px) {
+  .checkout-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .checkout-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .checkout-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .checkout-form input,
+  .checkout-form textarea,
+  .checkout-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
