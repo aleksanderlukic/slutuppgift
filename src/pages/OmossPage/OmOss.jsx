@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "../../Components/Navbar";
 import "./OmOss.css";
 
 export default function OmOss() {
   return (
     <div className="om-oss-page">
-      <Navbar cartItems={[]} />
+    
 
       {/* Bakgrundsbox */}
       <div className="background-box"></div>
