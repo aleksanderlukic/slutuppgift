@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Drone Delights – Food Delivery by Drone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I built this project as part of the "Gränssnittsutveckling" course at Newton Yrkeshögskola (VT25). It's a front-end web app that simulates a modern food delivery service using drones. You can browse the menu, add items to your cart, go through checkout, and see a confirmation page. I wanted to make it simple, smooth, and easy to use, with a clean look.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To run the project on your computer:
 
-### `npm start`
+    npm install
+    npm run dev
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To start the JSON server for the mock data (products and orders):
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    npm run server
 
-### `npm test`
+## Purpose and Objectives
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The main goal was to practice building a full front-end application with React. I wanted something that feels like a real service, where users can actually go through the process of choosing food and placing an order. It's also part of my portfolio, so I wanted it to look neat and professional.
 
-### `npm run build`
+## Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React 18
+- JSON-server for products and orders
+- CSS for styling
+- LocalStorage for cart management
+- UUID for unique order IDs
+- Figma for wireframes and layout
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Homepage: Simple introduction to the service
+- Menu Page: Browse products, filter by category, add to cart
+- Cart: See and update selected items
+- Checkout: Fill in name, address, phone, and payment info
+- Confirmation Page: View order summary
+- About Us: Info about the service
 
-### `npm run eject`
+## What I Learned
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project taught me a lot about working with state in React and keeping the UI in sync with LocalStorage. I also learned how to structure components in a clear way and think about user flows.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Next time, I’d like to try TypeScript, add a few animations, and maybe connect it to a real backend for more realistic order handling.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Conclusion
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project shows that I can build a functional and responsive web app that looks good and works well. It’s a solid foundation for future, more complex projects.
 
-## Learn More
+# Drone Delights – Matleverans med drönare (Svenska)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Jag gjorde det här projektet som en del av kursen "Gränssnittsutveckling" på Newton Yrkeshögskola (VT25). Det är en front-end webapp som simulerar en modern matleveranstjänst med drönare. Du kan kolla menyn, lägga till produkter i varukorgen, göra checkout och se en bekräftelsesida. Jag ville att det skulle vara enkelt, smidigt och lättanvänt, med ett rent utseende.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Kom igång
 
-### Code Splitting
+För att köra projektet lokalt:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    npm install
+    npm run dev
 
-### Analyzing the Bundle Size
+För att starta JSON-servern för mock-data:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    npm run server
 
-### Making a Progressive Web App
+## Syfte
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Syftet var att öva på att bygga en hel frontendapplikation med React. Jag ville ha något som känns som en riktig tjänst, där användare faktiskt kan gå igenom processen att välja mat och lägga en beställning. Eftersom det också är en del av min portfolio ville jag att det ska se snyggt och proffsigt ut.
 
-### Advanced Configuration
+## Teknologier
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- React 18
+- JSON-server för produkter och ordrar
+- CSS för styling
+- LocalStorage för varukorg
+- UUID för unika order-ID:n
+- Figma för wireframes och layout
 
-### Deployment
+## Funktioner
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Startsida: Kort presentation av tjänsten
+- Menysida: Bläddra produkter, filtrera efter kategori, lägg till i varukorg
+- Varukorg: Se och uppdatera valda produkter
+- Checkout: Fyll i namn, adress, telefon och betalning
+- Bekräftelsesida: Se orderöversikt
+- Om oss: Information om tjänsten
 
-### `npm run build` fails to minify
+## Vad jag lärde mig
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Jag lärde mig mycket om state-hantering i React och att hålla UI synkat med LocalStorage. Jag lärde mig också hur man strukturerar komponenter på ett logiskt sätt och tänker på användarflöden.
+
+Nästa gång vill jag testa TypeScript, lägga till några animationer och kanske koppla till en riktig backend för mer realistisk orderhantering.
+
+## Slutsats
+
+Projektet visar att jag kan bygga en fungerande och responsiv webapp som både ser bra ut och fungerar som den ska. Det är en bra grund för framtida, mer avancerade projekt.
