@@ -6,8 +6,7 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-  // ➕ Lägg till rätt
-  const addToCart = (dish, quantity) => {
+  const addToCart = (dish, quantity = 1) => {
     setCart((prevCart) => {
       const existing = prevCart.find((item) => item.id === dish.id);
       if (existing) {
@@ -21,19 +20,16 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // ➕ Öka antal
-  const increment = (id) => {
-    setCart((prevCart) =>
-      prevCart.map((item) =>
+  const increment = (id) =>
+    setCart((prev) =>
+      prev.map((item) =>
         item.id === id ? { ...item, quantity: item.quantity + 1 } : item
       )
     );
-  };
 
-  // ➖ Minska antal
-  const decrement = (id) => {
-    setCart((prevCart) =>
-      prevCart
+  const decrement = (id) =>
+    setCart((prev) =>
+      prev
         .map((item) =>
           item.id === id && item.quantity > 1
             ? { ...item, quantity: item.quantity - 1 }
@@ -41,17 +37,12 @@ export const CartProvider = ({ children }) => {
         )
         .filter((item) => item.quantity > 0)
     );
-  };
 
-  // ❌ Ta bort en rätt helt
-  const removeItem = (id) => {
-    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
-  };
+  const removeItem = (id) =>
+    setCart((prev) => prev.filter((item) => item.id !== id));
 
-  // 🗑️ Töm hela kundvagnen
   const emptyCart = () => setCart([]);
 
-  // 💰 Totalt pris
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0

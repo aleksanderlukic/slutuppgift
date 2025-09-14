@@ -1,5 +1,6 @@
-// MenuPage.jsx
+// src/pages/MenuPage/Menu.jsx
 import React, { useState } from "react";
+import { useCart } from "../../context/CardContext"; // 👈 hämta addToCart här
 import "./Menu.css";
 
 const sampleMenu = [
@@ -40,9 +41,10 @@ const sampleMenu = [
   },
 ];
 
-const MenuPage = ({ addToCart }) => {
+const MenuPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("Alla");
   const [search, setSearch] = useState("");
+  const { addToCart } = useCart(); // 👈 fixar felet
 
   const categories = [
     "Alla",
@@ -90,7 +92,7 @@ const MenuPage = ({ addToCart }) => {
             <img src={item.img} alt={item.name} className="menu-img" />
             <h3>{item.name}</h3>
             <p>{item.price} kr</p>
-            <button className="menu-btn" onClick={() => addToCart(item)}>
+            <button className="menu-btn" onClick={() => addToCart(item, 1)}>
               Lägg till i kundvagn
             </button>
           </div>
