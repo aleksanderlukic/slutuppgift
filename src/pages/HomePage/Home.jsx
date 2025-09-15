@@ -23,24 +23,32 @@ export default function Home() {
 
       <div className="card-container">
         <Card
+          id={101}
           imgSrc="/images/chicken-wings.png"
           title="Chicken Wings"
           description="Krispiga kycklingvingar, perfekt kryddade."
+          price={55}
         />
         <Card
+          id={102}
           imgSrc="/images/coffee.png"
           title="Freshed Coffee"
           description="Doften av nybryggt kaffe med fyllig smak."
+          price={25}
         />
         <Card
+          id={103}
           imgSrc="/images/burger.png"
           title="Classic Burger"
           description="En saftig burgare med fräscha tillbehör."
+          price={99}
         />
         <Card
+          id={104}
           imgSrc="/images/asian-crisps.png"
           title="Asian Rice Crisp"
           description="Frasiga rischips med en touch av Asien."
+          price={45}
         />
       </div>
     </div>
