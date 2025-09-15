@@ -8,7 +8,15 @@ export default function Card({ id, imgSrc, title, description, price }) {
   const { addToCart } = useCart();
 
   const handleAdd = () => {
-    addToCart({ id, name: title, price, img: imgSrc }, 1);
+    addToCart(
+      {
+        id,
+        name: title,
+        price,
+        image: imgSrc.replace("/images/", ""), // 👈 viktig fix
+      },
+      1
+    );
     setAdded(true);
     setTimeout(() => setAdded(false), 1000);
   };

@@ -2,172 +2,181 @@
   "products": [
     {
       "id": 1,
-      "name": "Spicy Buffalo Wings",
-      "category": "Förrätter",
-      "price": 50,
-      "image": "chicken-wings.png",
-      "description": "Krispiga vingar med en het glaze, perfekt för en rivstart."
-    },
-    {
-      "id": 2,
-      "name": "Asiatiska Rischips",
+      "name": "Asian Rice Crisps",
       "category": "Förrätter",
       "price": 45,
       "image": "asian-crisps.png",
-      "description": "Lätta och frasiga rischips med en asiatisk kryddblandning."
+      "description": "Lätta och frasiga rischips med en touch av Asien."
+    },
+    {
+      "id": 2,
+      "name": "Chicken Wings",
+      "category": "Förrätter",
+      "price": 50,
+      "image": "chicken-wings.png",
+      "description": "Krispiga och smakrika kycklingvingar med kryddig glaze."
     },
     {
       "id": 3,
-      "name": "Grillad Fiskplate",
+      "name": "Fish Plate",
       "category": "Förrätter",
-      "price": 55,
+      "price": 65,
       "image": "fish-plate.png",
-      "description": "En blandning av nygrillade fiskbitar med fräscha tillbehör."
+      "description": "En mix av grillade fiskdelikatesser serverade med sås."
     },
     {
       "id": 4,
-      "name": "Classic Burger",
-      "category": "Huvudrätter",
-      "price": 99,
-      "image": "burger.png",
-      "description": "En klassisk burgare med saftigt kött, ost och färska grönsaker."
+      "name": "Crispy Chicken Bites",
+      "category": "Förrätter",
+      "price": 55,
+      "image": "crispy-chicken.png",
+      "description": "Små krispiga kycklingbitar med dipp."
     },
     {
       "id": 5,
-      "name": "Mediterranean Wrap",
-      "category": "Huvudrätter",
-      "price": 85,
-      "image": "vietnamese.png",
-      "description": "Wrap fylld med grillade grönsaker, hummus och kyckling."
+      "name": "Roasted Veggies Al Dente",
+      "category": "Förrätter",
+      "price": 49,
+      "image": "vegetables-al-dente.png",
+      "description": "Ugnsrostade grönsaker med medelhavskryddor."
     },
     {
       "id": 6,
-      "name": "BBQ Pulled Pork Sandwich",
+      "name": "Classic Burger",
       "category": "Huvudrätter",
-      "price": 90,
-      "image": "sandwich.png",
-      "description": "Pulled pork med rökig BBQ-sås och picklad lök."
+      "price": 95,
+      "image": "burger.png",
+      "description": "En saftig klassisk burgare med fräscha tillbehör."
     },
     {
       "id": 7,
-      "name": "Ramen",
+      "name": "Thin Crust Pizza",
       "category": "Huvudrätter",
-      "price": 110,
-      "image": "ramen.png",
-      "description": "Japansk nudelsoppa med kött, ägg och grönsaker."
+      "price": 99,
+      "image": "pizza.png",
+      "description": "Tunn italiensk pizza med ost och tomatsås."
     },
     {
       "id": 8,
+      "name": "Grilled Chicken Fillet",
+      "category": "Huvudrätter",
+      "price": 92,
+      "image": "grilled-chicken.png",
+      "description": "Saftig grillad kycklingfilé med örtkryddor."
+    },
+    {
+      "id": 9,
+      "name": "Grilled Sirloin Steak",
+      "category": "Huvudrätter",
+      "price": 110,
+      "image": "steak.png",
+      "description": "Perfekt grillad entrecôte serverad medium-rare."
+    },
+    {
+      "id": 10,
       "name": "Shrimp Wok",
       "category": "Huvudrätter",
       "price": 105,
       "image": "shrimp-wok.png",
-      "description": "Wokade räkor med grönsaker och nudlar i sojasås."
-    },
-    {
-      "id": 9,
-      "name": "Grillad Biff",
-      "category": "Huvudrätter",
-      "price": 120,
-      "image": "steak.png",
-      "description": "Mör grillad biff serverad med potatis och rödvinssås."
-    },
-    {
-      "id": 10,
-      "name": "Grillad Kycklingfilé",
-      "category": "Huvudrätter",
-      "price": 92,
-      "image": "grilled-chicken.png",
-      "description": "Saftig kycklingfilé med örtsmör och sallad."
+      "description": "Wokade räkor med grönsaker och asiatisk sås."
     },
     {
       "id": 11,
+      "name": "Vietnamese Noodles",
+      "category": "Huvudrätter",
+      "price": 89,
+      "image": "vietnamese.png",
+      "description": "Vietnamesisk nudelrätt med örter och grönsaker."
+    },
+    {
+      "id": 12,
+      "name": "Ramen Bowl",
+      "category": "Huvudrätter",
+      "price": 95,
+      "image": "ramen.png",
+      "description": "Japansk ramen med nudlar, buljong och topping."
+    },
+    {
+      "id": 13,
+      "name": "BBQ Pulled Pork Sandwich",
+      "category": "Huvudrätter",
+      "price": 90,
+      "image": "sandwich.png",
+      "description": "Pulled pork i briochebröd med BBQ-sås."
+    },
+    {
+      "id": 14,
+      "name": "Meat Skewers",
+      "category": "Huvudrätter",
+      "price": 85,
+      "image": "meat-skewer.png",
+      "description": "Grillspett med marinerat kött och grönsaker."
+    },
+    {
+      "id": 15,
       "name": "Fish & Chips",
       "category": "Huvudrätter",
       "price": 108,
       "image": "fish-chips.png",
-      "description": "Klassisk brittisk rätt med friterad fisk och krispiga pommes."
-    },
-    {
-      "id": 12,
-      "name": "Pizza Margherita",
-      "category": "Huvudrätter",
-      "price": 95,
-      "image": "pizza.png",
-      "description": "Tunn pizzabotten toppad med mozzarella, tomat och basilika."
-    },
-    {
-      "id": 13,
-      "name": "Roasted Veggie Medley",
-      "category": "Huvudrätter",
-      "price": 55,
-      "image": "vegetables-chroma.png",
-      "description": "Rostade säsongsgrönsaker med vitlök och örter."
-    },
-    {
-      "id": 14,
-      "name": "Grilled Meat Skewers",
-      "category": "Huvudrätter",
-      "price": 89,
-      "image": "meat-skewer.png",
-      "description": "Grillade köttspett med paprikor och lök."
-    },
-    {
-      "id": 15,
-      "name": "Crispy Chicken Bites",
-      "category": "Förrätter",
-      "price": 58,
-      "image": "crispy-chicken.png",
-      "description": "Krispiga kycklingbitar med dipp."
+      "description": "Friterad fisk med krispiga pommes och sås."
     },
     {
       "id": 16,
-      "name": "Färskbryggt Kaffe",
-      "category": "Drycker",
-      "price": 25,
-      "image": "coffee.png",
-      "description": "Nyrostat kaffe med fyllig smak."
-      
-    },
-    {
-      "id": 17,
-      "name": "Te",
-      "category": "Drycker",
-      "price": 20,
-      "image": "tea.png",
-      "description": "Varmt te i olika smaker."
-    },
-    {
-      "id": 18,
-      "name": "Coca Cola",
-      "category": "Drycker",
-      "price": 25,
-      "image": "cola.png",
-      "description": "Klassisk läskedryck."
-    },
-    {
-      "id": 19,
-      "name": "Fresh Lemonade",
-      "category": "Drycker",
-      "price": 30,
-      "image": "juice.png",
-      "description": "Uppfriskande citronlemonad."
-    },
-    {
-      "id": 20,
       "name": "Triple Chocolate Cake",
       "category": "Desserter",
       "price": 60,
       "image": "cake.png",
-      "description": "En dekadent chokladkaka med tre lager choklad."
+      "description": "Chokladkaka med tre lager choklad."
+    },
+    {
+      "id": 17,
+      "name": "Ice Cream Deluxe",
+      "category": "Desserter",
+      "price": 55,
+      "image": "ice-cream-deluxe.png",
+      "description": "Lyxig glass med topping."
+    },
+    {
+      "id": 18,
+      "name": "Coffee",
+      "category": "Drycker",
+      "price": 25,
+      "image": "coffee.png",
+      "description": "Nyrostat kaffe serverat varmt."
+    },
+    {
+      "id": 19,
+      "name": "Tea",
+      "category": "Drycker",
+      "price": 20,
+      "image": "tea.png",
+      "description": "Varmt te, välj mellan grönt, svart eller örtte."
+    },
+    {
+      "id": 20,
+      "name": "Coca Cola",
+      "category": "Drycker",
+      "price": 25,
+      "image": "cola.png",
+      "description": "Kall Coca Cola, 33cl burk."
     },
     {
       "id": 21,
-      "name": "Glass Deluxe",
-      "category": "Desserter",
-      "price": 40,
-      "image": "ice-cream-deluxe.png",
-      "description": "Lyxig glass med topping."
+      "name": "Fresh Lemonade",
+      "category": "Drycker",
+      "price": 30,
+      "image": "juice.png",
+      "description": "Hemgjord citronlemonad med is."
+    },
+    {
+      "id": 22,
+      "name": "Roasted Veggie Medley",
+      "category": "Huvudrätter",
+      "price": 55,
+      "image": "vegetables-chroma.png",
+      "description": "En blandning av ugnsrostade grönsaker."
     }
-  ]
+  ],
+  "orders": [],
+  "users": []
 }
