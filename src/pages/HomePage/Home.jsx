@@ -28,7 +28,7 @@ export default function Home() {
           <button className="menu-btn">Visa Meny</button>
         </Link>
         <Link to="/om-oss">
-          <button className="omoss-btn">Om oss</button>
+          <button className="menu-btn">Om oss</button>
         </Link>
       </div>
 

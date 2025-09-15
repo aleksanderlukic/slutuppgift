@@ -3,19 +3,19 @@
   max-width: 900px;
   margin: 120px auto 40px; /* lämnar plats för Navbar */
   padding: 20px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(64, 0, 255, 0.68) 0%,
     rgba(101, 50, 255, 0.68) 100%
-  );
+  ); */
   border-radius: 12px;
-  font-family: 'Inter', sans-serif;
-  min-height: 70vh; /* ser till att navbar alltid sitter rätt */
+  font-family: "Inter", sans-serif;
+  min-height: 100vh; /* ser till att navbar alltid sitter rätt */
 }
 
 .cart-title {
   font-size: 36px;
-  color: #FFA82F;
+  color: #ffa82f;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -32,7 +32,7 @@
   background: #fff;
   padding: 12px 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   height: 110px; /* enhetlig höjd för alla produkter */
 }
 
@@ -74,7 +74,7 @@
 .control-btn {
   width: 30px;
   height: 30px;
-  background: #FFA82F;
+  background: #ffa82f;
   border: none;
   font-size: 18px;
   color: #000;
@@ -100,7 +100,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #FFA82F;
+  background: #ffa82f;
   color: #fff;
   padding: 15px 20px;
   border-radius: 8px;
@@ -112,7 +112,7 @@
 .checkout-btn {
   width: 100%;
   padding: 14px;
-  background: #FFA82F;
+  background: #ffa82f;
   border: none;
   color: #fff;
   font-size: 16px;

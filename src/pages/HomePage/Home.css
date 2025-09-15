@@ -1,8 +1,8 @@
 .home-page {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(180deg, rgba(64,0,255,0.68) 0%, rgba(101,50,255,0.68) 100%);
-  font-family: 'Inter', sans-serif;
+  /* background: linear-gradient(180deg, rgba(64,0,255,0.68) 0%, rgba(101,50,255,0.68) 100%); */
+  font-family: "Inter", sans-serif;
   padding-top: 120px; /* plats för navbar */
   text-align: center;
 }
@@ -12,14 +12,14 @@
   font-size: 90px;
   line-height: 109px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 .hero-subtitle {
   font-weight: 600;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 40px;
 }
 
@@ -49,7 +49,7 @@
 .popular-title {
   font-weight: 400;
   font-size: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
