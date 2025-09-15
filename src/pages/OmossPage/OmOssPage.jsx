@@ -7,6 +7,9 @@ export default function OmOssPage() {
     <div className="om-oss-page">
       <div className="om-oss-box">
         <h1>Drone Delights</h1>
+        <p>Hett, gott och levererat blixtsnabbt.</p>
+
+        <h2>Vad menar vi med blixtsnabbt?</h2>
         <p>
           På Drone Delights får dina cravings bokstavligen vingar. Våra autonoma
           drönare levererar din beställning direkt när den är klar, förbi
