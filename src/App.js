@@ -1,14 +1,12 @@
 // src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import HomePage from "./pages/HomePage/Home";
 import OmOssPage from "./pages/OmossPage/OmOssPage";
 import MenuPage from "./pages/MenuPage/Menu";
 import CartPage from "./pages/CartPage/Cart";
 import CheckoutPage from "./pages/CheckoutPage/Checkout";
 import ThankYouPage from "./pages/ThankYouPage/ThankYouPage";
-
 import Navbar from "./Components/Navbar";
 import { CartProvider } from "./context/CardContext";
 
