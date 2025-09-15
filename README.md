@@ -4,6 +4,16 @@ I built this project as part of the "Gränssnittsutveckling" course at Newton Yr
 
 ## Getting Started
 
+Open 2 terminals:
+
+One to run the server:
+
+npx json-server --watch db.json --port 3001
+
+One to run the project:
+
+npm start
+
 To run the project on your computer:
 
     npm install
@@ -52,6 +62,16 @@ This project shows that I can build a functional and responsive web app that loo
 Jag gjorde det här projektet som en del av kursen "Gränssnittsutveckling" på Newton Yrkeshögskola (VT25). Det är en front-end webapp som simulerar en modern matleveranstjänst med drönare. Du kan kolla menyn, lägga till produkter i varukorgen, göra checkout och se en bekräftelsesida. Jag ville att det skulle vara enkelt, smidigt och lättanvänt, med ett rent utseende.
 
 ## Kom igång
+
+Öppna 2 terminaler:
+
+En ska köra servern:
+
+npx json-server --watch db.json --port 3001
+
+En ska köra projektet:
+
+npm start
 
 För att köra projektet lokalt:
 
