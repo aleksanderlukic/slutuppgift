@@ -1,90 +1,62 @@
-/* src/pages/HomePage/Home.css */
 .home-page {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(
-    180deg,
-    rgba(64, 0, 255, 0.68) 0%,
-    rgba(101, 50, 255, 0.68) 100%
-  );
-  padding: 0 50px;
-  font-family: "Inter", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  background: linear-gradient(180deg, rgba(64,0,255,0.68) 0%, rgba(101,50,255,0.68) 100%);
+  font-family: 'Inter', sans-serif;
+  padding-top: 120px; /* plats för navbar */
+  text-align: center;
 }
 
 .hero-title {
-  margin-top: 150px;
-  margin-bottom: 10px;
   font-weight: 700;
   font-size: 90px;
-  line-height: 1.2;
-  text-align: center;
+  line-height: 109px;
   text-transform: uppercase;
-  color: #fff;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .hero-subtitle {
-  margin-bottom: 50px;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #fff;
+  color: #FFFFFF;
+  margin-bottom: 40px;
 }
 
 .home-buttons {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin-bottom: 60px;
+  gap: 20px;
+  margin-bottom: 50px;
 }
 
 .home-buttons button {
-  padding: 14px 40px;
-  font-size: 20px;
-  font-weight: 600;
+  padding: 12px 30px;
+  font-size: 18px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
-  color: #fff;
-  transition: all 0.3s;
-  height: 52px; /* 🔑 Fixar så båda knapparna blir lika höga */
+  background-color: #ff9800;
+  color: white;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
-.menu-btn {
-  background-color: #e78e41;
-}
-
-.menu-btn:hover {
-  background-color: #d57e30;
-}
-
-.omoss-btn {
-  background-color: #8f75ff;
-}
-
-.omoss-btn:hover {
-  background-color: #775ee0;
+.home-buttons button:hover {
+  background-color: #e68900;
 }
 
 .popular-title {
-  margin-bottom: 40px;
   font-weight: 400;
   font-size: 32px;
-  line-height: 39px;
-  color: #fff;
-  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
-/* 🔑 Grid fix: två centrerade kolumner */
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px 80px;
-  justify-items: center;
-  max-width: 900px;
-  margin: 0 auto 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 20px;
 }
