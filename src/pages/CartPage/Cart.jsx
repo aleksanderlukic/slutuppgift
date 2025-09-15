@@ -17,40 +17,42 @@ const CartPage = () => {
         <p className="empty-cart">Din kundvagn är tom</p>
       ) : (
         <>
-          {cart.map((item) => (
-            <div key={item.id} className="cart-item">
-              <img
-                src={`/images/${item.image}`}
-                alt={item.name}
-                className="cart-item-img"
-              />
-              <div className="cart-item-info">
-                <p className="item-name">{item.name}</p>
-                <p className="item-price">{item.price} kr</p>
-              </div>
-              <div className="cart-item-controls">
+          <div className="cart-items">
+            {cart.map((item) => (
+              <div key={item.id} className="cart-item">
+                <img
+                  src={`/images/${item.image}`}
+                  alt={item.name}
+                  className="cart-item-img"
+                />
+                <div className="cart-item-info">
+                  <p className="item-name">{item.name}</p>
+                  <p className="item-price">{item.price} kr</p>
+                </div>
+                <div className="cart-item-controls">
+                  <button
+                    className="control-btn"
+                    onClick={() => decrement(item.id)}
+                  >
+                    -
+                  </button>
+                  <span className="item-quantity">{item.quantity}</span>
+                  <button
+                    className="control-btn"
+                    onClick={() => increment(item.id)}
+                  >
+                    +
+                  </button>
+                </div>
                 <button
-                  className="control-btn"
-                  onClick={() => decrement(item.id)}
+                  className="remove-btn"
+                  onClick={() => removeItem(item.id)}
                 >
-                  -
-                </button>
-                <span className="item-quantity">{item.quantity}</span>
-                <button
-                  className="control-btn"
-                  onClick={() => increment(item.id)}
-                >
-                  +
+                  x
                 </button>
               </div>
-              <button
-                className="remove-btn"
-                onClick={() => removeItem(item.id)}
-              >
-                x
-              </button>
-            </div>
-          ))}
+            ))}
+          </div>
 
           <div className="cart-footer">
             <p className="total-label">Totalt:</p>

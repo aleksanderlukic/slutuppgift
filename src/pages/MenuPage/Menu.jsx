@@ -1,3 +1,4 @@
+// src/pages/MenuPage/Menu.jsx
 import React, { useEffect, useState } from "react";
 import "./Menu.css";
 import QuantityModal from "../../Components/QuantityModal";
@@ -10,7 +11,6 @@ const MenuPage = () => {
   const [search, setSearch] = useState("");
   const [selectedDish, setSelectedDish] = useState(null);
 
-  // Hämta produkter från json-server
   useEffect(() => {
     fetch("http://localhost:3001/products")
       .then((res) => res.json())
@@ -18,7 +18,6 @@ const MenuPage = () => {
       .catch((err) => console.error("Error fetching menu:", err));
   }, []);
 
-  // Kategorier på svenska (matchar db.json)
   const categories = [
     "Alla",
     "Förrätter",
@@ -27,7 +26,6 @@ const MenuPage = () => {
     "Desserter",
   ];
 
-  // Filtrera på kategori + sökning
   const filteredMenu = menu.filter(
     (item) =>
       (selectedCategory === "Alla" || item.category === selectedCategory) &&
@@ -38,7 +36,6 @@ const MenuPage = () => {
     <div className="menu-container">
       <h1 className="menu-title">Meny</h1>
 
-      {/* Sökfält och filter */}
       <div className="menu-controls">
         <input
           type="text"
@@ -61,7 +58,6 @@ const MenuPage = () => {
         </select>
       </div>
 
-      {/* Visa rätterna */}
       <div className="menu-grid">
         {filteredMenu.map((item) => (
           <div key={item.id} className="menu-item">
@@ -79,7 +75,6 @@ const MenuPage = () => {
         ))}
       </div>
 
-      {/* Modal för kvantitet */}
       {selectedDish && (
         <QuantityModal
           dish={selectedDish}
