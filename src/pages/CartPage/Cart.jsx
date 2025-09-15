@@ -1,15 +1,13 @@
-// src/pages/CartPage/CartPage.jsx
+// src/pages/CartPage/Cart.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useCart } from "../../context/CardContext"; // 👈 hämta context
+import { useCart } from "../../context/CardContext";
 import "./Cart.css";
 
 const CartPage = () => {
-  const navigate = useNavigate();
-
-  // 👇 hämta allt från context
   const { cart, increment, decrement, removeItem, emptyCart, totalPrice } =
     useCart();
+  const navigate = useNavigate();
 
   return (
     <div className="cart-container">
@@ -21,7 +19,11 @@ const CartPage = () => {
         <>
           {cart.map((item) => (
             <div key={item.id} className="cart-item">
-              <img src={item.img} alt={item.name} className="cart-item-img" />
+              <img
+                src={`/images/${item.image}`}
+                alt={item.name}
+                className="cart-item-img"
+              />
               <div className="cart-item-info">
                 <p className="item-name">{item.name}</p>
                 <p className="item-price">{item.price} kr</p>

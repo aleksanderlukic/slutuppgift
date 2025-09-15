@@ -1,19 +1,17 @@
 // src/pages/CheckoutPage/CheckoutPage.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../../context/CardContext";
 import "./Checkout.css";
 
-const CheckoutPage = ({ cartItems }) => {
-  const navigate = useNavigate();
+const CheckoutPage = () => {
+  const { cart, totalPrice, emptyCart } = useCart();
   const [paymentMethod, setPaymentMethod] = useState("kort");
-
-  const totalPrice = cartItems.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0
-  );
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    emptyCart();
     navigate("/thankyou");
   };
 
@@ -23,7 +21,7 @@ const CheckoutPage = ({ cartItems }) => {
 
       <h2>Orderöversikt</h2>
       <ul>
-        {cartItems.map((item) => (
+        {cart.map((item) => (
           <li key={item.id}>
             {item.name} x {item.quantity} = {item.price * item.quantity} kr
           </li>
