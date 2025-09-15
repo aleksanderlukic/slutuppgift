@@ -8,9 +8,11 @@ To run the project on your computer:
 
     npm install
     npm run dev
+    npm start
 
 To start the JSON server for the mock data (products and orders):
 
+    npx json-server --watch db.json --port 3001
     npm run server
 
 ## Purpose and Objectives
@@ -55,9 +57,11 @@ För att köra projektet lokalt:
 
     npm install
     npm run dev
+    npm start
 
 För att starta JSON-servern för mock-data:
 
+    npx json-server --watch db.json --port 3001
     npm run server
 
 ## Syfte
