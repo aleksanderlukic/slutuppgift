@@ -6,7 +6,8 @@
       "category": "Förrätter",
       "price": 45,
       "image": "asian-crisps.png",
-      "description": "Lätta och frasiga rischips med en touch av Asien."
+      "description": "Lätta och frasiga rischips med en touch av Asien.",
+      "popular": true
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "category": "Förrätter",
       "price": 50,
       "image": "chicken-wings.png",
-      "description": "Krispiga och smakrika kycklingvingar med kryddig glaze."
+      "description": "Krispiga och smakrika kycklingvingar med kryddig glaze.",
+      "popular": true
     },
     {
       "id": 3,
@@ -46,7 +48,8 @@
       "category": "Huvudrätter",
       "price": 95,
       "image": "burger.png",
-      "description": "En saftig klassisk burgare med fräscha tillbehör."
+      "description": "En saftig klassisk burgare med fräscha tillbehör.",
+      "popular": true
     },
     {
       "id": 7,
@@ -142,7 +145,8 @@
       "category": "Drycker",
       "price": 25,
       "image": "coffee.png",
-      "description": "Nyrostat kaffe serverat varmt."
+      "description": "Nyrostat kaffe serverat varmt.",
+      "popular": true
     },
     {
       "id": 19,

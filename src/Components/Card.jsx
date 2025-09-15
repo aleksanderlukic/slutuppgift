@@ -8,12 +8,18 @@ export default function Card({ id, imgSrc, title, description, price }) {
   const { addToCart } = useCart();
 
   const handleAdd = () => {
+    // alltid samma format för image
+    const cleanImage = imgSrc.includes("/images/")
+      ? imgSrc.replace("/images/", "")
+      : imgSrc;
+
     addToCart(
       {
         id,
         name: title,
         price,
-        image: imgSrc.replace("/images/", ""), // 👈 viktig fix
+        image: cleanImage, // ✅ alltid bara filnamn
+        description,
       },
       1
     );
