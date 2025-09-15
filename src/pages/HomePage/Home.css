@@ -1,71 +1,90 @@
+/* src/pages/HomePage/Home.css */
 .home-page {
-  position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(180deg, rgba(64,0,255,0.68) 0%, rgba(101,50,255,0.68) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(64, 0, 255, 0.68) 0%,
+    rgba(101, 50, 255, 0.68) 100%
+  );
   padding: 0 50px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .hero-title {
-  width: 1102px;
-  height: 109px;
-  margin: 50px auto 10px;
+  margin-top: 150px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 90px;
-  line-height: 109px;
+  line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .hero-subtitle {
-  width: 344px;
-  height: 48px;
-  margin: 0 auto 50px;
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #FFFFFF;
-}
-
-.popular-title {
-  width: 318px;
-  height: 39px;
-  margin: 0 auto 40px;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 39px;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
+  color: #fff;
 }
 
 .home-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin: 20px 0;
+  gap: 40px;
+  margin-bottom: 60px;
 }
 
 .home-buttons button {
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: 600;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
-  background-color: #ff9800;
-  color: white;
-  transition: background 0.3s;
+  color: #fff;
+  transition: all 0.3s;
+  height: 52px; /* 🔑 Fixar så båda knapparna blir lika höga */
 }
 
-.home-buttons button:hover {
-  background-color: #e68900;
+.menu-btn {
+  background-color: #e78e41;
+}
+
+.menu-btn:hover {
+  background-color: #d57e30;
+}
+
+.omoss-btn {
+  background-color: #8f75ff;
+}
+
+.omoss-btn:hover {
+  background-color: #775ee0;
+}
+
+.popular-title {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+  text-align: center;
+}
+
+/* 🔑 Grid fix: två centrerade kolumner */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 80px;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto 100px;
 }
